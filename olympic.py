@@ -7,7 +7,7 @@ headers = {
 }
 
 
-def get_olympic_medal_tally(country_alpha_3: str = None) -> dict[str, any]:
+def get_olympic_medal_tally(ioc_country_code: str = None) -> dict[str, any]:
     response = requests.get(url, timeout=2, headers=headers)
 
     soup = BeautifulSoup(response.text, "html.parser")
@@ -38,7 +38,7 @@ def get_olympic_medal_tally(country_alpha_3: str = None) -> dict[str, any]:
             },
         }
 
-        if country_alpha_3 and country_code.upper() == country_alpha_3.upper():
+        if ioc_country_code and country_code.upper() == ioc_country_code.upper():
             return {
                 "last_updated": soup.find("time")["datetime"],
                 "results": [result],
@@ -46,7 +46,7 @@ def get_olympic_medal_tally(country_alpha_3: str = None) -> dict[str, any]:
 
         results.append(result)
 
-    if country_alpha_3:
+    if ioc_country_code:
         return []
 
     return {
