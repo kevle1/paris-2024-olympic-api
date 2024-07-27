@@ -14,9 +14,11 @@ Or deploy yourself:
 
 GET [/medals](https://api.olympics.kevle.xyz/medals)
 
+Query parameters:
+
 - `country` (Optional)
-  - Query medals for a specific country using an [alpha 3 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3#Current_codes)
-  - Returns empty list if country does not exist or have any medals yet
+  - Query medals for a specific country using an [IOC country code](https://en.wikipedia.org/wiki/List_of_IOC_country_codes#Current_NOCs)
+  - Returns an empty list if country does not exist or have any medals yet
 
 ### Example Response
 
