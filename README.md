@@ -24,19 +24,33 @@ Query parameters:
 
 ```json
 {
-  "last_updated": "2024-07-27T11:25:10+00:00",
+  "last_updated": "2024-07-27T14:13:22+00:00",
   "results": [
     {
       "country": {
-        "code": "KOR",
-        "name": "Republic of Korea"
+        "code": "CHN",
+        "name": "People's Republic of China"
       },
       "medals": {
         "bronze": 0,
-        "gold": 0,
-        "silver": 1,
+        "gold": 2,
+        "silver": 0,
+        "total": 2
+      },
+      "rank": 1
+    },
+    {
+      "country": {
+        "code": "AUS",
+        "name": "Australia"
+      },
+      "medals": {
+        "bronze": 0,
+        "gold": 1,
+        "silver": 0,
         "total": 1
-      }
+      },
+      "rank": 2
     },
     {
       "country": {
@@ -46,21 +60,10 @@ Query parameters:
       "medals": {
         "bronze": 1,
         "gold": 0,
-        "silver": 0,
-        "total": 1
-      }
-    },
-    {
-      "country": {
-        "code": "KAZ",
-        "name": "Kazakhstan"
+        "silver": 1,
+        "total": 2
       },
-      "medals": {
-        "bronze": 1,
-        "gold": 0,
-        "silver": 0,
-        "total": 1
-      }
+      "rank": 3
     }
   ]
 }
