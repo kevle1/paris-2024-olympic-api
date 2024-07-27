@@ -7,15 +7,16 @@ headers = {
 }
 
 
-def get_olympic_medal_tally(ioc_country_code: str = None) -> dict[str, any]:
+def get_olympic_medal_tally(noc_code: str = None) -> dict[str, any]:
     response = requests.get(url, timeout=2, headers=headers)
 
     soup = BeautifulSoup(response.text, "html.parser")
     medal_table = soup.find("div", {"data-test-id": "virtuoso-item-list"})
 
     results = []
-    for row in medal_table.find_all("div", {"data-testid": "noc-row"}):
-        spans = row.find_all("span")
+    rank = 1
+    for noc in medal_table.find_all("div", {"data-testid": "noc-row"}):
+        spans = noc.find_all("span")
 
         country_code = spans[1].text
         country_name = spans[2].text
@@ -36,18 +37,17 @@ def get_olympic_medal_tally(ioc_country_code: str = None) -> dict[str, any]:
                 "bronze": int(bronze),
                 "total": int(total),
             },
+            "rank": int(rank),
         }
 
-        if ioc_country_code and country_code.upper() == ioc_country_code.upper():
+        if noc_code and country_code.upper() == noc_code.upper():
             return {
                 "last_updated": soup.find("time")["datetime"],
                 "results": [result],
             }
 
         results.append(result)
-
-    if ioc_country_code:
-        return []
+        rank += 1
 
     return {
         "last_updated": soup.find("time")["datetime"],

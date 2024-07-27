@@ -17,8 +17,8 @@ GET [/medals](https://api.olympics.kevle.xyz/medals)
 Query parameters:
 
 - `country` (Optional)
-  - Query medals for a specific country using an [IOC country code](https://en.wikipedia.org/wiki/List_of_IOC_country_codes#Current_NOCs)
-  - Returns an empty list if country does not exist or have any medals yet
+  - Query medals for a specific country using an [IOC NOC code](https://en.wikipedia.org/wiki/List_of_IOC_country_codes#Current_NOCs)
+  - Returns an empty list if NOC does not exist or have any medals yet
 
 ### Example Response
 
