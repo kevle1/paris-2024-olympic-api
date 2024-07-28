@@ -1,8 +1,10 @@
 from flask import Flask, jsonify, make_response, request
+from flask_cors import CORS
 
 from olympic import get_olympic_medal_tally
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route("/", methods=["GET"])
