@@ -2,7 +2,7 @@
 
 ![paris-2024](https://i.imgur.com/mXgb71e.png)
 
-An **unofficial** API for the Paris 2024 summer olympics medal tally. [Data source](https://olympics.com/en/paris-2024/medals)
+An **unofficial** API for the Paris 2024 summer olympics medal tally. [Data scraped from Olympic site](https://olympics.com/en/paris-2024/medals)
 
 Hosted at https://api.olympics.kevle.xyz/
 
@@ -17,28 +17,15 @@ GET [/medals](https://api.olympics.kevle.xyz/medals)
 Query parameters:
 
 - `country` (Optional)
-  - Query medals for a specific country using an [IOC NOC code](https://en.wikipedia.org/wiki/List_of_IOC_country_codes#Current_NOCs)
+  - Query medals for a specific country using an [IOC NOC country code](https://en.wikipedia.org/wiki/List_of_IOC_country_codes#Current_NOCs)
   - Returns an empty list if NOC does not exist or have any medals yet
 
 ### Example Response
 
 ```json
 {
-  "last_updated": "2024-07-27T14:13:22+00:00",
+  "last_updated": "2024-07-28T06:28:31+00:00",
   "results": [
-    {
-      "country": {
-        "code": "CHN",
-        "name": "People's Republic of China"
-      },
-      "medals": {
-        "bronze": 0,
-        "gold": 2,
-        "silver": 0,
-        "total": 2
-      },
-      "rank": 1
-    },
     {
       "country": {
         "code": "AUS",
@@ -46,24 +33,50 @@ Query parameters:
       },
       "medals": {
         "bronze": 0,
-        "gold": 1,
+        "gold": 3,
+        "silver": 2,
+        "total": 5
+      },
+      "rank": 1
+    },
+    {
+      "country": {
+        "code": "CHN",
+        "name": "People's Republic of China"
+      },
+      "medals": {
+        "bronze": 1,
+        "gold": 2,
         "silver": 0,
-        "total": 1
+        "total": 3
       },
       "rank": 2
     },
     {
       "country": {
-        "code": "GBR",
-        "name": "Great Britain"
+        "code": "USA",
+        "name": "United States of America"
+      },
+      "medals": {
+        "bronze": 2,
+        "gold": 1,
+        "silver": 2,
+        "total": 5
+      },
+      "rank": 3
+    },
+    {
+      "country": {
+        "code": "FRA",
+        "name": "France"
       },
       "medals": {
         "bronze": 1,
-        "gold": 0,
-        "silver": 1,
-        "total": 2
+        "gold": 1,
+        "silver": 2,
+        "total": 4
       },
-      "rank": 3
+      "rank": 4
     }
   ]
 }
