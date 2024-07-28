@@ -7,15 +7,51 @@ headers = {
 }
 
 
-def get_olympic_medal_tally(noc_code: str = None) -> dict[str, any]:
+def _calculate_rankings(results: list[dict[str, any]]) -> list[dict[str, any]]:
+    """
+    We are unable to extract the ranking from the website medal table, so we need to calculate it ourselves.
+    Following convention outlined in https://en.wikipedia.org/wiki/Olympic_medal_table
+    """
+    results.sort(
+        key=lambda x: (
+            x["medals"]["gold"],
+            x["medals"]["silver"],
+            x["medals"]["bronze"],
+            x["country"]["code"],
+        ),
+        reverse=True,
+    )
+
+    rank = 1
+    for i in range(len(results)):
+        if i > 0:
+            # if medal counts are equal, rank is the same
+            if (
+                results[i]["medals"]["gold"] == results[i - 1]["medals"]["gold"]
+                and results[i]["medals"]["silver"] == results[i - 1]["medals"]["silver"]
+                and results[i]["medals"]["bronze"] == results[i - 1]["medals"]["bronze"]
+            ):
+                results[i]["rank"] = results[i - 1]["rank"]
+            else:
+                results[i]["rank"] = rank
+        else:
+            results[i]["rank"] = rank
+
+        rank += 1
+
+    # countries with same rank should be sorted by IOC country code
+    results.sort(key=lambda x: (x["rank"], x["country"]["code"]))
+
+    return results
+
+
+def get_olympic_medal_tally(ioc_noc_code: str = None) -> dict[str, any]:
     response = requests.get(url, timeout=2, headers=headers)
 
     soup = BeautifulSoup(response.text, "html.parser")
-    medal_table = soup.find("div", {"data-test-id": "virtuoso-item-list"})
 
     results = []
-    rank = 1
-    for noc in medal_table.find_all("div", {"data-testid": "noc-row"}):
+    for noc in soup.find_all("div", {"data-testid": "noc-row"}):
         spans = noc.find_all("span")
 
         country_code = spans[1].text
@@ -37,19 +73,23 @@ def get_olympic_medal_tally(noc_code: str = None) -> dict[str, any]:
                 "bronze": int(bronze),
                 "total": int(total),
             },
-            "rank": int(rank),
         }
 
-        if noc_code and country_code.upper() == noc_code.upper():
-            return {
-                "last_updated": soup.find("time")["datetime"],
-                "results": [result],
-            }
-
         results.append(result)
-        rank += 1
+
+    last_updated = soup.find("time")["datetime"]
+    ranked_results = _calculate_rankings(results)
+
+    if ioc_noc_code:
+        for result in ranked_results:
+            if result["country"]["code"].lower() == ioc_noc_code.lower():
+                return {
+                    "last_updated": last_updated,
+                    "results": [result],
+                }
+        return {"last_updated": last_updated, "results": []}
 
     return {
-        "last_updated": soup.find("time")["datetime"],
-        "results": results,
+        "last_updated": last_updated,
+        "results": ranked_results,
     }
