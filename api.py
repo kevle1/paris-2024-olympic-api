@@ -17,7 +17,7 @@ def get_medal_tally():
     results = get_olympic_medal_tally(request.args.get("country"))
     response = make_response(jsonify(results))
     # https://vercel.com/docs/edge-network/caching
-    response.headers["Cache-Control"] = "public, s-maxage=1800"
+    response.headers["Cache-Control"] = "public, s-maxage=900"
     return response
 
 
