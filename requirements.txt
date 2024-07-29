@@ -1,4 +1,6 @@
 beautifulsoup4==4.12.3
-requests==2.32.3
-flask==3.0.3
 Flask-Cors==4.0.1
+flask==3.0.3
+requests==2.32.3
+selenium==4.23.1
+webdriver-manager==4.0.2

@@ -14,11 +14,20 @@ Or deploy yourself:
 
 GET [/medals](https://api.olympics.kevle.xyz/medals)
 
+Note: Limited to the top 19 countries by default if `all` flag not set [see issue #2](https://github.com/kevle1/paris-2024-olympic-api/issues/2)
+
 Query parameters:
 
-- `country` (Optional)
+- `country` str (Optional)
   - Query medals for a specific country using an [IOC NOC country code](https://en.wikipedia.org/wiki/List_of_IOC_country_codes#Current_NOCs)
   - Returns an empty list if NOC does not exist or have any medals yet
+  - Example [/medals?country=AUS](https://api.olympics.kevle.xyz/medals?country=aus)
+  - If country is not returned despite being in the medals tally, try set below flag
+- `all` bool (Optional, default false)
+  - Returns all results by using a headless browser at the cost of being much slower
+  - Examples:
+    - [/medals?all=true](https://api.olympics.kevle.xyz/medals?all=true)
+    - [/medals?country=esp&all=true](https://api.olympics.kevle.xyzmedals?country=esp&all=true)
 
 ### Example Response
 
