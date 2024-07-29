@@ -82,9 +82,9 @@ def _parse_wikipedia_soup_medal_tally(
 
         country_name = noc.find("a").text
 
-        bronze = int(cells[2].text)
-        gold = int(cells[3].text)
-        silver = int(cells[4].text)
+        gold = int(cells[2].text)
+        silver = int(cells[3].text)
+        bronze = int(cells[4].text)
 
         country_data = {
             "country": {
