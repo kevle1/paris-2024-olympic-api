@@ -30,7 +30,7 @@ def get_medal_tally():
 
 
 @app.route("/medals/all", methods=["GET"])
-def get_medal_tally():
+def get_medal_tally_all():
     results = get_olympic_medal_tally(fetch_all=True)
     response = make_response(jsonify(results))
     # https://vercel.com/docs/edge-network/caching
