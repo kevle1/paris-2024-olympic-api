@@ -14,17 +14,24 @@ Or deploy yourself:
 
 GET [/medals](https://api.olympics.kevle.xyz/medals)
 
+Note: Limited to the top 19 countries by default if `all` flag not set [see issue #2](https://github.com/kevle1/paris-2024-olympic-api/issues/2)
+
 Query parameters:
 
-- `country` (Optional)
+- `country` str (Optional)
   - Query medals for a specific country using an [IOC NOC country code](https://en.wikipedia.org/wiki/List_of_IOC_country_codes#Current_NOCs)
   - Returns an empty list if NOC does not exist or have any medals yet
+  - Example [/medals?country=AUS](https://api.olympics.kevle.xyz/medals?country=aus)
+- `all` bool (Optional, default false)
+  - Returns all results by using Wikipedia as the data source
+  - Example [/medals?all=true](https://api.olympics.kevle.xyz/medals?all=true)
 
 ### Example Response
 
 ```json
 {
   "last_updated": "2024-07-28T06:28:31+00:00",
+  "length": 4,
   "results": [
     {
       "country": {
@@ -78,7 +85,8 @@ Query parameters:
       },
       "rank": 4
     }
-  ]
+  ],
+  "source": "olympics.com"
 }
 ```
 
