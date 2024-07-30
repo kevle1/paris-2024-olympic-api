@@ -12,24 +12,28 @@ Or deploy yourself:
 
 ## Usage
 
-GET [/medals](https://api.olympics.kevle.xyz/medals)
+### GET [/medals](https://api.olympics.kevle.xyz/medals)
 
-- Return medals for the top 19 countries from the [**Olympic** site](https://olympics.com/en/paris-2024/medals).
-- [Reason for limitation](https://github.com/kevle1/paris-2024-olympic-api/issues/2#issuecomment-2254770288)
+- Return medals for the **top 19** countries using the [**Olympic** site](https://olympics.com/en/paris-2024/medals).
+- [Reasons for limitation](https://github.com/kevle1/paris-2024-olympic-api/issues/2#issuecomment-2254770288)
 
-Query parameters:
+#### Query parameters:
 
 - `country` str (Optional)
   - Query medals for a specific country using an [IOC NOC country code](https://en.wikipedia.org/wiki/List_of_IOC_country_codes#Current_NOCs)
   - Returns an empty list if NOC does not exist or have any medals yet
-  - Note: will attempt to fallback to Wikipedia if country not found in the Olympic site results
   - Example [/medals?country=aus](https://api.olympics.kevle.xyz/medals?country=aus)
+- `iso_codes` bool (Optional)
+  - Include [ISO alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) and [ISO alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) country codes in the result "country" block
+  - Example [/medals?iso_codes=true](https://api.olympics.kevle.xyz/medals?iso_codes=true)
 
-GET [/medals/all](https://api.olympics.kevle.xyz/medals/all)
+### **GET [/medals/all](https://api.olympics.kevle.xyz/medals/all)**
 
-- Returns medals for all countries from [the **Wikipedia** Paris 2024 Olympic medal table](https://en.wikipedia.org/wiki/2024_Summer_Olympics_medal_table#Medal_table)
+- Returns medals for all countries using [the **Wikipedia** Paris 2024 Olympic medal table](https://en.wikipedia.org/wiki/2024_Summer_Olympics_medal_table#Medal_table)
+  - May be less reliable or up to date
 
-### Example Response
+
+#### Example Response
 
 ```json
 {
@@ -91,6 +95,24 @@ GET [/medals/all](https://api.olympics.kevle.xyz/medals/all)
   ],
   "source": "olympics.com"
 }
+```
+
+### **GET [/countries](https://api.olympics.kevle.xyz/countries)**
+
+- Returns all countries with useful country codes based on [Wikipedia of country codes](https://en.wikipedia.org/wiki/Comparison_of_alphabetic_country_codes).
+
+#### Example Response
+
+```json
+[
+  {
+    "country_name": "Australia",
+    "fifa_code": "AUS",
+    "ioc_noc_code": "AUS",
+    "iso_alpha_2": "AU",
+    "iso_alpha_3": "AUS"
+  }
+]
 ```
 
 ## Copyright

@@ -3,6 +3,8 @@ import requests
 
 from datetime import datetime
 
+from countries import get_noc_codes, inject_iso_codes
+
 OLYMPICS_URL = "https://olympics.com/en/paris-2024/medals"
 WIKIPEDIA_URL = "https://en.wikipedia.org/wiki/2024_Summer_Olympics_medal_table"
 
@@ -10,7 +12,9 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 
 
 def get_olympic_medal_tally(
-    fetch_all: bool = False, ioc_noc_code: str = None
+    fetch_all: bool = False,
+    incl_iso_codes: bool = False,
+    ioc_noc_code: str = None,
 ) -> dict[str, any]:
     if fetch_all:
         soup = _get_soup(WIKIPEDIA_URL)
@@ -28,28 +32,15 @@ def get_olympic_medal_tally(
             result = _get_result_by_country(results, ioc_noc_code)
         results = [result]
 
+    if incl_iso_codes:
+        results = inject_iso_codes(results)
+
     return {
         "last_updated": last_updated,
         "source": source,
         "length": len(results),
         "results": results,
     }
-
-
-def get_noc_codes() -> dict[str, str]:
-    response = requests.get("https://en.wikipedia.org/wiki/List_of_IOC_country_codes")
-    soup = BeautifulSoup(response.content, "html.parser")
-    noc_table = soup.find("table", {"class": "wikitable"})
-
-    ioc_noc_codes = {}
-    for noc in noc_table.find_all("tr")[1:]:
-        cols = noc.find_all("td")
-        if len(cols) >= 2:
-            noc_code = cols[0].text.strip()
-            country = cols[1].text.strip()
-            ioc_noc_codes[country] = noc_code
-
-    return ioc_noc_codes
 
 
 def _get_result_by_country(
@@ -79,12 +70,17 @@ def _parse_wikipedia_soup_medal_tally(
 
     for noc in noc_rows[1:-1]:
         cells = noc.find_all(["td", "th"])
-
         country_name = noc.find("a").text
 
-        gold = int(cells[2].text)
-        silver = int(cells[3].text)
-        bronze = int(cells[4].text)
+        offset = 0
+        # some countries share a merged cell for the rank and country name
+        # causing the medal count to be at a different index
+        if len(cells) == 5:
+            offset = 1
+
+        gold = int(cells[2 - offset].text)
+        silver = int(cells[3 - offset].text)
+        bronze = int(cells[4 - offset].text)
 
         country_data = {
             "country": {
