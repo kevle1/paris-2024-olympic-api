@@ -39,7 +39,7 @@ def get_medal_tally_all():
     results = get_olympic_medal_tally(fetch_all=True, incl_iso_codes=incl_iso_codes)
 
     response = make_response(jsonify(results))
-    response.headers["Cache-Control"] = "public, s-maxage=3600"
+    response.headers["Cache-Control"] = "public, s-maxage=1800"
     return response
 
 
