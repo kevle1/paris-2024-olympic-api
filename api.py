@@ -21,12 +21,7 @@ def home():
 @app.route("/medals", methods=["GET"])
 def get_medal_tally():
     ioc_noc_code = request.args.get("country")
-    fetch_all = bool(request.args.get("all"))
-    incl_iso_codes = bool(request.args.get("iso_codes"))
-
-    results = get_olympic_medal_tally(
-        fetch_all=fetch_all, incl_iso_codes=incl_iso_codes, ioc_noc_code=ioc_noc_code
-    )
+    results = get_olympic_medal_tally(ioc_noc_code=ioc_noc_code)
     response = make_response(jsonify(results))
     # https://vercel.com/docs/edge-network/caching
     response.headers["Cache-Control"] = "public, s-maxage=1800"
@@ -35,20 +30,8 @@ def get_medal_tally():
 
 @app.route("/medals/all", methods=["GET"])
 def get_medal_tally_all():
-    incl_iso_codes = bool(request.args.get("iso_codes"))
-    results = get_olympic_medal_tally(fetch_all=True, incl_iso_codes=incl_iso_codes)
-
-    response = make_response(jsonify(results))
-    response.headers["Cache-Control"] = "public, s-maxage=1800"
-    return response
-
-
-@app.route("/countries", methods=["GET"])
-def get_countries():
-    results, _ = get_country_codes()
-    response = make_response(jsonify(results))
-    response.headers["Cache-Control"] = "public, s-maxage=3600"
-    return response
+    # Deprecated
+    return get_medal_tally()
 
 
 if __name__ == "__main__":

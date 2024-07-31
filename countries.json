@@ -1,0 +1,1780 @@
+[
+    {
+        "country_name": "Afghanistan",
+        "fifa_code": "AFG",
+        "ioc_noc_code": "AFG",
+        "iso_alpha_2": "AF",
+        "iso_alpha_3": "AFG"
+    },
+    {
+        "country_name": "Åland Islands",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "AX",
+        "iso_alpha_3": "ALA"
+    },
+    {
+        "country_name": "Albania",
+        "fifa_code": "ALB",
+        "ioc_noc_code": "ALB",
+        "iso_alpha_2": "AL",
+        "iso_alpha_3": "ALB"
+    },
+    {
+        "country_name": "Algeria",
+        "fifa_code": "ALG",
+        "ioc_noc_code": "ALG",
+        "iso_alpha_2": "DZ",
+        "iso_alpha_3": "DZA"
+    },
+    {
+        "country_name": "American Samoa",
+        "fifa_code": "ASA",
+        "ioc_noc_code": "ASA",
+        "iso_alpha_2": "AS",
+        "iso_alpha_3": "ASM"
+    },
+    {
+        "country_name": "Andorra",
+        "fifa_code": "AND",
+        "ioc_noc_code": "AND",
+        "iso_alpha_2": "AD",
+        "iso_alpha_3": "AND"
+    },
+    {
+        "country_name": "Angola",
+        "fifa_code": "ANG",
+        "ioc_noc_code": "ANG",
+        "iso_alpha_2": "AO",
+        "iso_alpha_3": "AGO"
+    },
+    {
+        "country_name": "Anguilla",
+        "fifa_code": "AIA",
+        "ioc_noc_code": null,
+        "iso_alpha_2": "AI",
+        "iso_alpha_3": "AIA"
+    },
+    {
+        "country_name": "Antarctica",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "AQ",
+        "iso_alpha_3": "ATA"
+    },
+    {
+        "country_name": "Antigua and Barbuda",
+        "fifa_code": "ATG",
+        "ioc_noc_code": "ANT",
+        "iso_alpha_2": "AG",
+        "iso_alpha_3": "ATG"
+    },
+    {
+        "country_name": "Argentina",
+        "fifa_code": "ARG",
+        "ioc_noc_code": "ARG",
+        "iso_alpha_2": "AR",
+        "iso_alpha_3": "ARG"
+    },
+    {
+        "country_name": "Armenia",
+        "fifa_code": "ARM",
+        "ioc_noc_code": "ARM",
+        "iso_alpha_2": "AM",
+        "iso_alpha_3": "ARM"
+    },
+    {
+        "country_name": "Aruba",
+        "fifa_code": "ARU",
+        "ioc_noc_code": "ARU",
+        "iso_alpha_2": "AW",
+        "iso_alpha_3": "ABW"
+    },
+    {
+        "country_name": "Australia",
+        "fifa_code": "AUS",
+        "ioc_noc_code": "AUS",
+        "iso_alpha_2": "AU",
+        "iso_alpha_3": "AUS"
+    },
+    {
+        "country_name": "Austria",
+        "fifa_code": "AUT",
+        "ioc_noc_code": "AUT",
+        "iso_alpha_2": "AT",
+        "iso_alpha_3": "AUT"
+    },
+    {
+        "country_name": "Azerbaijan",
+        "fifa_code": "AZE",
+        "ioc_noc_code": "AZE",
+        "iso_alpha_2": "AZ",
+        "iso_alpha_3": "AZE"
+    },
+    {
+        "country_name": "Bahamas",
+        "fifa_code": "BAH",
+        "ioc_noc_code": "BAH",
+        "iso_alpha_2": "BS",
+        "iso_alpha_3": "BHS"
+    },
+    {
+        "country_name": "Bahrain",
+        "fifa_code": "BHR",
+        "ioc_noc_code": "BRN",
+        "iso_alpha_2": "BH",
+        "iso_alpha_3": "BHR"
+    },
+    {
+        "country_name": "Bangladesh",
+        "fifa_code": "BAN",
+        "ioc_noc_code": "BAN",
+        "iso_alpha_2": "BD",
+        "iso_alpha_3": "BGD"
+    },
+    {
+        "country_name": "Barbados",
+        "fifa_code": "BRB",
+        "ioc_noc_code": "BAR",
+        "iso_alpha_2": "BB",
+        "iso_alpha_3": "BRB"
+    },
+    {
+        "country_name": "Belarus",
+        "fifa_code": "BLR",
+        "ioc_noc_code": "BLR",
+        "iso_alpha_2": "BY",
+        "iso_alpha_3": "BLR"
+    },
+    {
+        "country_name": "Belgium",
+        "fifa_code": "BEL",
+        "ioc_noc_code": "BEL",
+        "iso_alpha_2": "BE",
+        "iso_alpha_3": "BEL"
+    },
+    {
+        "country_name": "Belize",
+        "fifa_code": "BLZ",
+        "ioc_noc_code": "BIZ",
+        "iso_alpha_2": "BZ",
+        "iso_alpha_3": "BLZ"
+    },
+    {
+        "country_name": "Benin",
+        "fifa_code": "BEN",
+        "ioc_noc_code": "BEN",
+        "iso_alpha_2": "BJ",
+        "iso_alpha_3": "BEN"
+    },
+    {
+        "country_name": "Bermuda",
+        "fifa_code": "BER",
+        "ioc_noc_code": "BER",
+        "iso_alpha_2": "BM",
+        "iso_alpha_3": "BMU"
+    },
+    {
+        "country_name": "Bhutan",
+        "fifa_code": "BHU",
+        "ioc_noc_code": "BHU",
+        "iso_alpha_2": "BT",
+        "iso_alpha_3": "BTN"
+    },
+    {
+        "country_name": "Bolivia, Plurinational State of",
+        "fifa_code": "BOL",
+        "ioc_noc_code": "BOL",
+        "iso_alpha_2": "BO",
+        "iso_alpha_3": "BOL"
+    },
+    {
+        "country_name": "Bonaire, Sint Eustatius and Saba",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "BQ",
+        "iso_alpha_3": "BES"
+    },
+    {
+        "country_name": "Bosnia and Herzegovina",
+        "fifa_code": "BIH",
+        "ioc_noc_code": "BIH",
+        "iso_alpha_2": "BA",
+        "iso_alpha_3": "BIH"
+    },
+    {
+        "country_name": "Botswana",
+        "fifa_code": "BOT",
+        "ioc_noc_code": "BOT",
+        "iso_alpha_2": "BW",
+        "iso_alpha_3": "BWA"
+    },
+    {
+        "country_name": "Bouvet Island",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "BV",
+        "iso_alpha_3": "BVT"
+    },
+    {
+        "country_name": "Brazil",
+        "fifa_code": "BRA",
+        "ioc_noc_code": "BRA",
+        "iso_alpha_2": "BR",
+        "iso_alpha_3": "BRA"
+    },
+    {
+        "country_name": "British Indian Ocean Territory",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "IO",
+        "iso_alpha_3": "IOT"
+    },
+    {
+        "country_name": "Virgin Islands, British",
+        "fifa_code": "VGB",
+        "ioc_noc_code": "IVB",
+        "iso_alpha_2": "VG",
+        "iso_alpha_3": "VGB"
+    },
+    {
+        "country_name": "Brunei Darussalam",
+        "fifa_code": "BRU",
+        "ioc_noc_code": "BRU",
+        "iso_alpha_2": "BN",
+        "iso_alpha_3": "BRN"
+    },
+    {
+        "country_name": "Bulgaria",
+        "fifa_code": "BUL",
+        "ioc_noc_code": "BUL",
+        "iso_alpha_2": "BG",
+        "iso_alpha_3": "BGR"
+    },
+    {
+        "country_name": "Burkina Faso",
+        "fifa_code": "BFA",
+        "ioc_noc_code": "BUR",
+        "iso_alpha_2": "BF",
+        "iso_alpha_3": "BFA"
+    },
+    {
+        "country_name": "Burundi",
+        "fifa_code": "BDI",
+        "ioc_noc_code": "BDI",
+        "iso_alpha_2": "BI",
+        "iso_alpha_3": "BDI"
+    },
+    {
+        "country_name": "Cambodia",
+        "fifa_code": "CAM",
+        "ioc_noc_code": "CAM",
+        "iso_alpha_2": "KH",
+        "iso_alpha_3": "KHM"
+    },
+    {
+        "country_name": "Cameroon",
+        "fifa_code": "CMR",
+        "ioc_noc_code": "CMR",
+        "iso_alpha_2": "CM",
+        "iso_alpha_3": "CMR"
+    },
+    {
+        "country_name": "Canada",
+        "fifa_code": "CAN",
+        "ioc_noc_code": "CAN",
+        "iso_alpha_2": "CA",
+        "iso_alpha_3": "CAN"
+    },
+    {
+        "country_name": "Cabo Verde",
+        "fifa_code": "CPV",
+        "ioc_noc_code": "CPV",
+        "iso_alpha_2": "CV",
+        "iso_alpha_3": "CPV"
+    },
+    {
+        "country_name": "Cayman Islands",
+        "fifa_code": "CAY",
+        "ioc_noc_code": "CAY",
+        "iso_alpha_2": "KY",
+        "iso_alpha_3": "CYM"
+    },
+    {
+        "country_name": "Central African Republic",
+        "fifa_code": "CTA",
+        "ioc_noc_code": "CAF",
+        "iso_alpha_2": "CF",
+        "iso_alpha_3": "CAF"
+    },
+    {
+        "country_name": "Chad",
+        "fifa_code": "CHA",
+        "ioc_noc_code": "CHA",
+        "iso_alpha_2": "TD",
+        "iso_alpha_3": "TCD"
+    },
+    {
+        "country_name": "Chile",
+        "fifa_code": "CHI",
+        "ioc_noc_code": "CHI",
+        "iso_alpha_2": "CL",
+        "iso_alpha_3": "CHL"
+    },
+    {
+        "country_name": "China",
+        "fifa_code": "CHN",
+        "ioc_noc_code": "CHN",
+        "iso_alpha_2": "CN",
+        "iso_alpha_3": "CHN"
+    },
+    {
+        "country_name": "Christmas Island",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "CX",
+        "iso_alpha_3": "CXR"
+    },
+    {
+        "country_name": "Cocos (Keeling) Islands",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "CC",
+        "iso_alpha_3": "CCK"
+    },
+    {
+        "country_name": "Colombia",
+        "fifa_code": "COL",
+        "ioc_noc_code": "COL",
+        "iso_alpha_2": "CO",
+        "iso_alpha_3": "COL"
+    },
+    {
+        "country_name": "Comoros",
+        "fifa_code": "COM",
+        "ioc_noc_code": "COM",
+        "iso_alpha_2": "KM",
+        "iso_alpha_3": "COM"
+    },
+    {
+        "country_name": "Congo, The Democratic Republic of the",
+        "fifa_code": "COD",
+        "ioc_noc_code": "COD",
+        "iso_alpha_2": "CD",
+        "iso_alpha_3": "COD"
+    },
+    {
+        "country_name": "Congo",
+        "fifa_code": "CGO",
+        "ioc_noc_code": "CGO",
+        "iso_alpha_2": "CG",
+        "iso_alpha_3": "COG"
+    },
+    {
+        "country_name": "Cook Islands",
+        "fifa_code": "COK",
+        "ioc_noc_code": "COK",
+        "iso_alpha_2": "CK",
+        "iso_alpha_3": "COK"
+    },
+    {
+        "country_name": "Costa Rica",
+        "fifa_code": "CRC",
+        "ioc_noc_code": "CRC",
+        "iso_alpha_2": "CR",
+        "iso_alpha_3": "CRI"
+    },
+    {
+        "country_name": "Côte d'Ivoire",
+        "fifa_code": "CIV",
+        "ioc_noc_code": "CIV",
+        "iso_alpha_2": "CI",
+        "iso_alpha_3": "CIV"
+    },
+    {
+        "country_name": "Croatia",
+        "fifa_code": "CRO",
+        "ioc_noc_code": "CRO",
+        "iso_alpha_2": "HR",
+        "iso_alpha_3": "HRV"
+    },
+    {
+        "country_name": "Cuba",
+        "fifa_code": "CUB",
+        "ioc_noc_code": "CUB",
+        "iso_alpha_2": "CU",
+        "iso_alpha_3": "CUB"
+    },
+    {
+        "country_name": "Curaçao",
+        "fifa_code": "CUW",
+        "ioc_noc_code": null,
+        "iso_alpha_2": "CW",
+        "iso_alpha_3": "CUW"
+    },
+    {
+        "country_name": "Cyprus",
+        "fifa_code": "CYP",
+        "ioc_noc_code": "CYP",
+        "iso_alpha_2": "CY",
+        "iso_alpha_3": "CYP"
+    },
+    {
+        "country_name": "Czechia",
+        "fifa_code": "CZE",
+        "ioc_noc_code": "CZE",
+        "iso_alpha_2": "CZ",
+        "iso_alpha_3": "CZE"
+    },
+    {
+        "country_name": "Denmark",
+        "fifa_code": "DEN",
+        "ioc_noc_code": "DEN",
+        "iso_alpha_2": "DK",
+        "iso_alpha_3": "DNK"
+    },
+    {
+        "country_name": "Djibouti",
+        "fifa_code": "DJI",
+        "ioc_noc_code": "DJI",
+        "iso_alpha_2": "DJ",
+        "iso_alpha_3": "DJI"
+    },
+    {
+        "country_name": "Dominica",
+        "fifa_code": "DMA",
+        "ioc_noc_code": "DMA",
+        "iso_alpha_2": "DM",
+        "iso_alpha_3": "DMA"
+    },
+    {
+        "country_name": "Dominican Republic",
+        "fifa_code": "DOM",
+        "ioc_noc_code": "DOM",
+        "iso_alpha_2": "DO",
+        "iso_alpha_3": "DOM"
+    },
+    {
+        "country_name": "Ecuador",
+        "fifa_code": "ECU",
+        "ioc_noc_code": "ECU",
+        "iso_alpha_2": "EC",
+        "iso_alpha_3": "ECU"
+    },
+    {
+        "country_name": "Egypt",
+        "fifa_code": "EGY",
+        "ioc_noc_code": "EGY",
+        "iso_alpha_2": "EG",
+        "iso_alpha_3": "EGY"
+    },
+    {
+        "country_name": "El Salvador",
+        "fifa_code": "SLV",
+        "ioc_noc_code": "ESA",
+        "iso_alpha_2": "SV",
+        "iso_alpha_3": "SLV"
+    },
+    {
+        "country_name": "El Salvador",
+        "fifa_code": "ENG",
+        "ioc_noc_code": null,
+        "iso_alpha_2": "SV",
+        "iso_alpha_3": null
+    },
+    {
+        "country_name": "Equatorial Guinea",
+        "fifa_code": "EQG",
+        "ioc_noc_code": "GEQ",
+        "iso_alpha_2": "GQ",
+        "iso_alpha_3": "GNQ"
+    },
+    {
+        "country_name": "Eritrea",
+        "fifa_code": "ERI",
+        "ioc_noc_code": "ERI",
+        "iso_alpha_2": "ER",
+        "iso_alpha_3": "ERI"
+    },
+    {
+        "country_name": "Estonia",
+        "fifa_code": "EST",
+        "ioc_noc_code": "EST",
+        "iso_alpha_2": "EE",
+        "iso_alpha_3": "EST"
+    },
+    {
+        "country_name": "Eswatini",
+        "fifa_code": "SWZ",
+        "ioc_noc_code": "SWZ",
+        "iso_alpha_2": "SZ",
+        "iso_alpha_3": "SWZ"
+    },
+    {
+        "country_name": "Ethiopia",
+        "fifa_code": "ETH",
+        "ioc_noc_code": "ETH",
+        "iso_alpha_2": "ET",
+        "iso_alpha_3": "ETH"
+    },
+    {
+        "country_name": "Falkland Islands (Malvinas)",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "FK",
+        "iso_alpha_3": "FLK"
+    },
+    {
+        "country_name": "Faroe Islands",
+        "fifa_code": "FRO",
+        "ioc_noc_code": null,
+        "iso_alpha_2": "FO",
+        "iso_alpha_3": "FRO"
+    },
+    {
+        "country_name": "Fiji",
+        "fifa_code": "FIJ",
+        "ioc_noc_code": "FIJ",
+        "iso_alpha_2": "FJ",
+        "iso_alpha_3": "FJI"
+    },
+    {
+        "country_name": "Finland",
+        "fifa_code": "FIN",
+        "ioc_noc_code": "FIN",
+        "iso_alpha_2": "FI",
+        "iso_alpha_3": "FIN"
+    },
+    {
+        "country_name": "France",
+        "fifa_code": "FRA",
+        "ioc_noc_code": "FRA",
+        "iso_alpha_2": "FR",
+        "iso_alpha_3": "FRA"
+    },
+    {
+        "country_name": "French Guiana",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "GF",
+        "iso_alpha_3": "GUF"
+    },
+    {
+        "country_name": "French Polynesia",
+        "fifa_code": "TAH",
+        "ioc_noc_code": null,
+        "iso_alpha_2": "PF",
+        "iso_alpha_3": "PYF"
+    },
+    {
+        "country_name": "French Southern Territories",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "TF",
+        "iso_alpha_3": "ATF"
+    },
+    {
+        "country_name": "Gabon",
+        "fifa_code": "GAB",
+        "ioc_noc_code": "GAB",
+        "iso_alpha_2": "GA",
+        "iso_alpha_3": "GAB"
+    },
+    {
+        "country_name": "Gambia",
+        "fifa_code": "GAM",
+        "ioc_noc_code": "GAM",
+        "iso_alpha_2": "GM",
+        "iso_alpha_3": "GMB"
+    },
+    {
+        "country_name": "Georgia",
+        "fifa_code": "GEO",
+        "ioc_noc_code": "GEO",
+        "iso_alpha_2": "GE",
+        "iso_alpha_3": "GEO"
+    },
+    {
+        "country_name": "Germany",
+        "fifa_code": "GER",
+        "ioc_noc_code": "GER",
+        "iso_alpha_2": "DE",
+        "iso_alpha_3": "DEU"
+    },
+    {
+        "country_name": "Ghana",
+        "fifa_code": "GHA",
+        "ioc_noc_code": "GHA",
+        "iso_alpha_2": "GH",
+        "iso_alpha_3": "GHA"
+    },
+    {
+        "country_name": "Gibraltar",
+        "fifa_code": "GIB",
+        "ioc_noc_code": null,
+        "iso_alpha_2": "GI",
+        "iso_alpha_3": "GIB"
+    },
+    {
+        "country_name": "Greece",
+        "fifa_code": "GRE",
+        "ioc_noc_code": "GRE",
+        "iso_alpha_2": "GR",
+        "iso_alpha_3": "GRC"
+    },
+    {
+        "country_name": "Greenland",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "GL",
+        "iso_alpha_3": "GRL"
+    },
+    {
+        "country_name": "Grenada",
+        "fifa_code": "GRN",
+        "ioc_noc_code": "GRN",
+        "iso_alpha_2": "GD",
+        "iso_alpha_3": "GRD"
+    },
+    {
+        "country_name": "Guadeloupe",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "GP",
+        "iso_alpha_3": "GLP"
+    },
+    {
+        "country_name": "Guam",
+        "fifa_code": "GUM",
+        "ioc_noc_code": "GUM",
+        "iso_alpha_2": "GU",
+        "iso_alpha_3": "GUM"
+    },
+    {
+        "country_name": "Guatemala",
+        "fifa_code": "GUA",
+        "ioc_noc_code": "GUA",
+        "iso_alpha_2": "GT",
+        "iso_alpha_3": "GTM"
+    },
+    {
+        "country_name": "Guernsey",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "GG",
+        "iso_alpha_3": "GGY"
+    },
+    {
+        "country_name": "Guinea",
+        "fifa_code": "GUI",
+        "ioc_noc_code": "GUI",
+        "iso_alpha_2": "GN",
+        "iso_alpha_3": "GIN"
+    },
+    {
+        "country_name": "Guinea-Bissau",
+        "fifa_code": "GNB",
+        "ioc_noc_code": "GBS",
+        "iso_alpha_2": "GW",
+        "iso_alpha_3": "GNB"
+    },
+    {
+        "country_name": "Guyana",
+        "fifa_code": "GUY",
+        "ioc_noc_code": "GUY",
+        "iso_alpha_2": "GY",
+        "iso_alpha_3": "GUY"
+    },
+    {
+        "country_name": "Haiti",
+        "fifa_code": "HAI",
+        "ioc_noc_code": "HAI",
+        "iso_alpha_2": "HT",
+        "iso_alpha_3": "HTI"
+    },
+    {
+        "country_name": "Heard Island and McDonald Islands",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "HM",
+        "iso_alpha_3": "HMD"
+    },
+    {
+        "country_name": "Honduras",
+        "fifa_code": "HON",
+        "ioc_noc_code": "HON",
+        "iso_alpha_2": "HN",
+        "iso_alpha_3": "HND"
+    },
+    {
+        "country_name": "Hong Kong",
+        "fifa_code": "HKG",
+        "ioc_noc_code": "HKG",
+        "iso_alpha_2": "HK",
+        "iso_alpha_3": "HKG"
+    },
+    {
+        "country_name": "Hungary",
+        "fifa_code": "HUN",
+        "ioc_noc_code": "HUN",
+        "iso_alpha_2": "HU",
+        "iso_alpha_3": "HUN"
+    },
+    {
+        "country_name": "Iceland",
+        "fifa_code": "ISL",
+        "ioc_noc_code": "ISL",
+        "iso_alpha_2": "IS",
+        "iso_alpha_3": "ISL"
+    },
+    {
+        "country_name": "India",
+        "fifa_code": "IND",
+        "ioc_noc_code": "IND",
+        "iso_alpha_2": "IN",
+        "iso_alpha_3": "IND"
+    },
+    {
+        "country_name": "Indonesia",
+        "fifa_code": "IDN",
+        "ioc_noc_code": "INA",
+        "iso_alpha_2": "ID",
+        "iso_alpha_3": "IDN"
+    },
+    {
+        "country_name": "Iran, Islamic Republic of",
+        "fifa_code": "IRN",
+        "ioc_noc_code": "IRI",
+        "iso_alpha_2": "IR",
+        "iso_alpha_3": "IRN"
+    },
+    {
+        "country_name": "Iraq",
+        "fifa_code": "IRQ",
+        "ioc_noc_code": "IRQ",
+        "iso_alpha_2": "IQ",
+        "iso_alpha_3": "IRQ"
+    },
+    {
+        "country_name": "Ireland",
+        "fifa_code": "IRL",
+        "ioc_noc_code": "IRL",
+        "iso_alpha_2": "IE",
+        "iso_alpha_3": "IRL"
+    },
+    {
+        "country_name": "Isle of Man",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "IM",
+        "iso_alpha_3": "IMN"
+    },
+    {
+        "country_name": "Israel",
+        "fifa_code": "ISR",
+        "ioc_noc_code": "ISR",
+        "iso_alpha_2": "IL",
+        "iso_alpha_3": "ISR"
+    },
+    {
+        "country_name": "Italy",
+        "fifa_code": "ITA",
+        "ioc_noc_code": "ITA",
+        "iso_alpha_2": "IT",
+        "iso_alpha_3": "ITA"
+    },
+    {
+        "country_name": "Jamaica",
+        "fifa_code": "JAM",
+        "ioc_noc_code": "JAM",
+        "iso_alpha_2": "JM",
+        "iso_alpha_3": "JAM"
+    },
+    {
+        "country_name": "Japan",
+        "fifa_code": "JPN",
+        "ioc_noc_code": "JPN",
+        "iso_alpha_2": "JP",
+        "iso_alpha_3": "JPN"
+    },
+    {
+        "country_name": "Jersey",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "JE",
+        "iso_alpha_3": "JEY"
+    },
+    {
+        "country_name": "Jordan",
+        "fifa_code": "JOR",
+        "ioc_noc_code": "JOR",
+        "iso_alpha_2": "JO",
+        "iso_alpha_3": "JOR"
+    },
+    {
+        "country_name": "Kazakhstan",
+        "fifa_code": "KAZ",
+        "ioc_noc_code": "KAZ",
+        "iso_alpha_2": "KZ",
+        "iso_alpha_3": "KAZ"
+    },
+    {
+        "country_name": "Kenya",
+        "fifa_code": "KEN",
+        "ioc_noc_code": "KEN",
+        "iso_alpha_2": "KE",
+        "iso_alpha_3": "KEN"
+    },
+    {
+        "country_name": "Kiribati",
+        "fifa_code": null,
+        "ioc_noc_code": "KIR",
+        "iso_alpha_2": "KI",
+        "iso_alpha_3": "KIR"
+    },
+    {
+        "country_name": "Korea, Democratic People's Republic of",
+        "fifa_code": "PRK",
+        "ioc_noc_code": "PRK",
+        "iso_alpha_2": "KP",
+        "iso_alpha_3": "PRK"
+    },
+    {
+        "country_name": "Korea, Republic of",
+        "fifa_code": "KOR",
+        "ioc_noc_code": "KOR",
+        "iso_alpha_2": "KR",
+        "iso_alpha_3": "KOR"
+    },
+    {
+        "country_name": "Korea, Republic of",
+        "fifa_code": "KOS",
+        "ioc_noc_code": "KOS",
+        "iso_alpha_2": "KR",
+        "iso_alpha_3": null
+    },
+    {
+        "country_name": "Kuwait",
+        "fifa_code": "KUW",
+        "ioc_noc_code": "KUW",
+        "iso_alpha_2": "KW",
+        "iso_alpha_3": "KWT"
+    },
+    {
+        "country_name": "Kyrgyzstan",
+        "fifa_code": "KGZ",
+        "ioc_noc_code": "KGZ",
+        "iso_alpha_2": "KG",
+        "iso_alpha_3": "KGZ"
+    },
+    {
+        "country_name": "Lao People's Democratic Republic",
+        "fifa_code": "LAO",
+        "ioc_noc_code": "LAO",
+        "iso_alpha_2": "LA",
+        "iso_alpha_3": "LAO"
+    },
+    {
+        "country_name": "Latvia",
+        "fifa_code": "LVA",
+        "ioc_noc_code": "LAT",
+        "iso_alpha_2": "LV",
+        "iso_alpha_3": "LVA"
+    },
+    {
+        "country_name": "Lebanon",
+        "fifa_code": "LBN",
+        "ioc_noc_code": "LBN",
+        "iso_alpha_2": "LB",
+        "iso_alpha_3": "LBN"
+    },
+    {
+        "country_name": "Lesotho",
+        "fifa_code": "LES",
+        "ioc_noc_code": "LES",
+        "iso_alpha_2": "LS",
+        "iso_alpha_3": "LSO"
+    },
+    {
+        "country_name": "Liberia",
+        "fifa_code": "LBR",
+        "ioc_noc_code": "LBR",
+        "iso_alpha_2": "LR",
+        "iso_alpha_3": "LBR"
+    },
+    {
+        "country_name": "Libya",
+        "fifa_code": "LBY",
+        "ioc_noc_code": "LBA",
+        "iso_alpha_2": "LY",
+        "iso_alpha_3": "LBY"
+    },
+    {
+        "country_name": "Liechtenstein",
+        "fifa_code": "LIE",
+        "ioc_noc_code": "LIE",
+        "iso_alpha_2": "LI",
+        "iso_alpha_3": "LIE"
+    },
+    {
+        "country_name": "Lithuania",
+        "fifa_code": "LTU",
+        "ioc_noc_code": "LTU",
+        "iso_alpha_2": "LT",
+        "iso_alpha_3": "LTU"
+    },
+    {
+        "country_name": "Luxembourg",
+        "fifa_code": "LUX",
+        "ioc_noc_code": "LUX",
+        "iso_alpha_2": "LU",
+        "iso_alpha_3": "LUX"
+    },
+    {
+        "country_name": "Macao",
+        "fifa_code": "MAC",
+        "ioc_noc_code": null,
+        "iso_alpha_2": "MO",
+        "iso_alpha_3": "MAC"
+    },
+    {
+        "country_name": "Madagascar",
+        "fifa_code": "MAD",
+        "ioc_noc_code": "MAD",
+        "iso_alpha_2": "MG",
+        "iso_alpha_3": "MDG"
+    },
+    {
+        "country_name": "Malawi",
+        "fifa_code": "MWI",
+        "ioc_noc_code": "MAW",
+        "iso_alpha_2": "MW",
+        "iso_alpha_3": "MWI"
+    },
+    {
+        "country_name": "Malaysia",
+        "fifa_code": "MAS",
+        "ioc_noc_code": "MAS",
+        "iso_alpha_2": "MY",
+        "iso_alpha_3": "MYS"
+    },
+    {
+        "country_name": "Maldives",
+        "fifa_code": "MDV",
+        "ioc_noc_code": "MDV",
+        "iso_alpha_2": "MV",
+        "iso_alpha_3": "MDV"
+    },
+    {
+        "country_name": "Mali",
+        "fifa_code": "MLI",
+        "ioc_noc_code": "MLI",
+        "iso_alpha_2": "ML",
+        "iso_alpha_3": "MLI"
+    },
+    {
+        "country_name": "Malta",
+        "fifa_code": "MLT",
+        "ioc_noc_code": "MLT",
+        "iso_alpha_2": "MT",
+        "iso_alpha_3": "MLT"
+    },
+    {
+        "country_name": "Marshall Islands",
+        "fifa_code": null,
+        "ioc_noc_code": "MHL",
+        "iso_alpha_2": "MH",
+        "iso_alpha_3": "MHL"
+    },
+    {
+        "country_name": "Martinique",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "MQ",
+        "iso_alpha_3": "MTQ"
+    },
+    {
+        "country_name": "Mauritania",
+        "fifa_code": "MTN",
+        "ioc_noc_code": "MTN",
+        "iso_alpha_2": "MR",
+        "iso_alpha_3": "MRT"
+    },
+    {
+        "country_name": "Mauritius",
+        "fifa_code": "MRI",
+        "ioc_noc_code": "MRI",
+        "iso_alpha_2": "MU",
+        "iso_alpha_3": "MUS"
+    },
+    {
+        "country_name": "Mayotte",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "YT",
+        "iso_alpha_3": "MYT"
+    },
+    {
+        "country_name": "Mexico",
+        "fifa_code": "MEX",
+        "ioc_noc_code": "MEX",
+        "iso_alpha_2": "MX",
+        "iso_alpha_3": "MEX"
+    },
+    {
+        "country_name": "Micronesia, Federated States of",
+        "fifa_code": null,
+        "ioc_noc_code": "FSM",
+        "iso_alpha_2": "FM",
+        "iso_alpha_3": "FSM"
+    },
+    {
+        "country_name": "Moldova, Republic of",
+        "fifa_code": "MDA",
+        "ioc_noc_code": "MDA",
+        "iso_alpha_2": "MD",
+        "iso_alpha_3": "MDA"
+    },
+    {
+        "country_name": "Monaco",
+        "fifa_code": null,
+        "ioc_noc_code": "MON",
+        "iso_alpha_2": "MC",
+        "iso_alpha_3": "MCO"
+    },
+    {
+        "country_name": "Mongolia",
+        "fifa_code": "MNG",
+        "ioc_noc_code": "MGL",
+        "iso_alpha_2": "MN",
+        "iso_alpha_3": "MNG"
+    },
+    {
+        "country_name": "Montenegro",
+        "fifa_code": "MNE",
+        "ioc_noc_code": "MNE",
+        "iso_alpha_2": "ME",
+        "iso_alpha_3": "MNE"
+    },
+    {
+        "country_name": "Montserrat",
+        "fifa_code": "MSR",
+        "ioc_noc_code": null,
+        "iso_alpha_2": "MS",
+        "iso_alpha_3": "MSR"
+    },
+    {
+        "country_name": "Morocco",
+        "fifa_code": "MAR",
+        "ioc_noc_code": "MAR",
+        "iso_alpha_2": "MA",
+        "iso_alpha_3": "MAR"
+    },
+    {
+        "country_name": "Mozambique",
+        "fifa_code": "MOZ",
+        "ioc_noc_code": "MOZ",
+        "iso_alpha_2": "MZ",
+        "iso_alpha_3": "MOZ"
+    },
+    {
+        "country_name": "Myanmar",
+        "fifa_code": "MYA",
+        "ioc_noc_code": "MYA",
+        "iso_alpha_2": "MM",
+        "iso_alpha_3": "MMR"
+    },
+    {
+        "country_name": "Namibia",
+        "fifa_code": "NAM",
+        "ioc_noc_code": "NAM",
+        "iso_alpha_2": "NA",
+        "iso_alpha_3": "NAM"
+    },
+    {
+        "country_name": "Nauru",
+        "fifa_code": null,
+        "ioc_noc_code": "NRU",
+        "iso_alpha_2": "NR",
+        "iso_alpha_3": "NRU"
+    },
+    {
+        "country_name": "Nepal",
+        "fifa_code": "NEP",
+        "ioc_noc_code": "NEP",
+        "iso_alpha_2": "NP",
+        "iso_alpha_3": "NPL"
+    },
+    {
+        "country_name": "Netherlands",
+        "fifa_code": "NED",
+        "ioc_noc_code": "NED",
+        "iso_alpha_2": "NL",
+        "iso_alpha_3": "NLD"
+    },
+    {
+        "country_name": "New Caledonia",
+        "fifa_code": "NCL",
+        "ioc_noc_code": null,
+        "iso_alpha_2": "NC",
+        "iso_alpha_3": "NCL"
+    },
+    {
+        "country_name": "New Zealand",
+        "fifa_code": "NZL",
+        "ioc_noc_code": "NZL",
+        "iso_alpha_2": "NZ",
+        "iso_alpha_3": "NZL"
+    },
+    {
+        "country_name": "Nicaragua",
+        "fifa_code": "NCA",
+        "ioc_noc_code": "NCA",
+        "iso_alpha_2": "NI",
+        "iso_alpha_3": "NIC"
+    },
+    {
+        "country_name": "Niger",
+        "fifa_code": "NIG",
+        "ioc_noc_code": "NIG",
+        "iso_alpha_2": "NE",
+        "iso_alpha_3": "NER"
+    },
+    {
+        "country_name": "Nigeria",
+        "fifa_code": "NGA",
+        "ioc_noc_code": "NGR",
+        "iso_alpha_2": "NG",
+        "iso_alpha_3": "NGA"
+    },
+    {
+        "country_name": "Niue",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "NU",
+        "iso_alpha_3": "NIU"
+    },
+    {
+        "country_name": "Norfolk Island",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "NF",
+        "iso_alpha_3": "NFK"
+    },
+    {
+        "country_name": "Norfolk Island",
+        "fifa_code": "NIR",
+        "ioc_noc_code": null,
+        "iso_alpha_2": "NF",
+        "iso_alpha_3": null
+    },
+    {
+        "country_name": "Northern Mariana Islands",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "MP",
+        "iso_alpha_3": "MNP"
+    },
+    {
+        "country_name": "North Macedonia",
+        "fifa_code": "MKD",
+        "ioc_noc_code": "MKD",
+        "iso_alpha_2": "MK",
+        "iso_alpha_3": "MKD"
+    },
+    {
+        "country_name": "Norway",
+        "fifa_code": "NOR",
+        "ioc_noc_code": "NOR",
+        "iso_alpha_2": "NO",
+        "iso_alpha_3": "NOR"
+    },
+    {
+        "country_name": "Oman",
+        "fifa_code": "OMA",
+        "ioc_noc_code": "OMA",
+        "iso_alpha_2": "OM",
+        "iso_alpha_3": "OMN"
+    },
+    {
+        "country_name": "Pakistan",
+        "fifa_code": "PAK",
+        "ioc_noc_code": "PAK",
+        "iso_alpha_2": "PK",
+        "iso_alpha_3": "PAK"
+    },
+    {
+        "country_name": "Palau",
+        "fifa_code": null,
+        "ioc_noc_code": "PLW",
+        "iso_alpha_2": "PW",
+        "iso_alpha_3": "PLW"
+    },
+    {
+        "country_name": "Palestine, State of",
+        "fifa_code": "PLE",
+        "ioc_noc_code": "PLE",
+        "iso_alpha_2": "PS",
+        "iso_alpha_3": "PSE"
+    },
+    {
+        "country_name": "Panama",
+        "fifa_code": "PAN",
+        "ioc_noc_code": "PAN",
+        "iso_alpha_2": "PA",
+        "iso_alpha_3": "PAN"
+    },
+    {
+        "country_name": "Papua New Guinea",
+        "fifa_code": "PNG",
+        "ioc_noc_code": "PNG",
+        "iso_alpha_2": "PG",
+        "iso_alpha_3": "PNG"
+    },
+    {
+        "country_name": "Paraguay",
+        "fifa_code": "PAR",
+        "ioc_noc_code": "PAR",
+        "iso_alpha_2": "PY",
+        "iso_alpha_3": "PRY"
+    },
+    {
+        "country_name": "Peru",
+        "fifa_code": "PER",
+        "ioc_noc_code": "PER",
+        "iso_alpha_2": "PE",
+        "iso_alpha_3": "PER"
+    },
+    {
+        "country_name": "Philippines",
+        "fifa_code": "PHI",
+        "ioc_noc_code": "PHI",
+        "iso_alpha_2": "PH",
+        "iso_alpha_3": "PHL"
+    },
+    {
+        "country_name": "Pitcairn",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "PN",
+        "iso_alpha_3": "PCN"
+    },
+    {
+        "country_name": "Poland",
+        "fifa_code": "POL",
+        "ioc_noc_code": "POL",
+        "iso_alpha_2": "PL",
+        "iso_alpha_3": "POL"
+    },
+    {
+        "country_name": "Portugal",
+        "fifa_code": "POR",
+        "ioc_noc_code": "POR",
+        "iso_alpha_2": "PT",
+        "iso_alpha_3": "PRT"
+    },
+    {
+        "country_name": "Puerto Rico",
+        "fifa_code": "PUR",
+        "ioc_noc_code": "PUR",
+        "iso_alpha_2": "PR",
+        "iso_alpha_3": "PRI"
+    },
+    {
+        "country_name": "Qatar",
+        "fifa_code": "QAT",
+        "ioc_noc_code": "QAT",
+        "iso_alpha_2": "QA",
+        "iso_alpha_3": "QAT"
+    },
+    {
+        "country_name": "Réunion",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "RE",
+        "iso_alpha_3": "REU"
+    },
+    {
+        "country_name": "Romania",
+        "fifa_code": "ROU",
+        "ioc_noc_code": "ROU",
+        "iso_alpha_2": "RO",
+        "iso_alpha_3": "ROU"
+    },
+    {
+        "country_name": "Russian Federation",
+        "fifa_code": "RUS",
+        "ioc_noc_code": "RUS",
+        "iso_alpha_2": "RU",
+        "iso_alpha_3": "RUS"
+    },
+    {
+        "country_name": "Rwanda",
+        "fifa_code": "RWA",
+        "ioc_noc_code": "RWA",
+        "iso_alpha_2": "RW",
+        "iso_alpha_3": "RWA"
+    },
+    {
+        "country_name": "Saint Barthélemy",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "BL",
+        "iso_alpha_3": "BLM"
+    },
+    {
+        "country_name": "Saint Helena, Ascension and Tristan da Cunha",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "SH",
+        "iso_alpha_3": "SHN"
+    },
+    {
+        "country_name": "Saint Kitts and Nevis",
+        "fifa_code": "SKN",
+        "ioc_noc_code": "SKN",
+        "iso_alpha_2": "KN",
+        "iso_alpha_3": "KNA"
+    },
+    {
+        "country_name": "Saint Lucia",
+        "fifa_code": "LCA",
+        "ioc_noc_code": "LCA",
+        "iso_alpha_2": "LC",
+        "iso_alpha_3": "LCA"
+    },
+    {
+        "country_name": "Saint Martin (French part)",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "MF",
+        "iso_alpha_3": "MAF"
+    },
+    {
+        "country_name": "Saint Pierre and Miquelon",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "PM",
+        "iso_alpha_3": "SPM"
+    },
+    {
+        "country_name": "Saint Vincent and the Grenadines",
+        "fifa_code": "VIN",
+        "ioc_noc_code": "VIN",
+        "iso_alpha_2": "VC",
+        "iso_alpha_3": "VCT"
+    },
+    {
+        "country_name": "Samoa",
+        "fifa_code": "SAM",
+        "ioc_noc_code": "SAM",
+        "iso_alpha_2": "WS",
+        "iso_alpha_3": "WSM"
+    },
+    {
+        "country_name": "San Marino",
+        "fifa_code": "SMR",
+        "ioc_noc_code": "SMR",
+        "iso_alpha_2": "SM",
+        "iso_alpha_3": "SMR"
+    },
+    {
+        "country_name": "Sao Tome and Principe",
+        "fifa_code": "STP",
+        "ioc_noc_code": "STP",
+        "iso_alpha_2": "ST",
+        "iso_alpha_3": "STP"
+    },
+    {
+        "country_name": "Saudi Arabia",
+        "fifa_code": "KSA",
+        "ioc_noc_code": "KSA",
+        "iso_alpha_2": "SA",
+        "iso_alpha_3": "SAU"
+    },
+    {
+        "country_name": "Saudi Arabia",
+        "fifa_code": "SCO",
+        "ioc_noc_code": null,
+        "iso_alpha_2": "SA",
+        "iso_alpha_3": null
+    },
+    {
+        "country_name": "Senegal",
+        "fifa_code": "SEN",
+        "ioc_noc_code": "SEN",
+        "iso_alpha_2": "SN",
+        "iso_alpha_3": "SEN"
+    },
+    {
+        "country_name": "Serbia",
+        "fifa_code": "SRB",
+        "ioc_noc_code": "SRB",
+        "iso_alpha_2": "RS",
+        "iso_alpha_3": "SRB"
+    },
+    {
+        "country_name": "Seychelles",
+        "fifa_code": "SEY",
+        "ioc_noc_code": "SEY",
+        "iso_alpha_2": "SC",
+        "iso_alpha_3": "SYC"
+    },
+    {
+        "country_name": "Sierra Leone",
+        "fifa_code": "SLE",
+        "ioc_noc_code": "SLE",
+        "iso_alpha_2": "SL",
+        "iso_alpha_3": "SLE"
+    },
+    {
+        "country_name": "Singapore",
+        "fifa_code": "SGP",
+        "ioc_noc_code": "SGP",
+        "iso_alpha_2": "SG",
+        "iso_alpha_3": "SGP"
+    },
+    {
+        "country_name": "Sint Maarten (Dutch part)",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "SX",
+        "iso_alpha_3": "SXM"
+    },
+    {
+        "country_name": "Slovakia",
+        "fifa_code": "SVK",
+        "ioc_noc_code": "SVK",
+        "iso_alpha_2": "SK",
+        "iso_alpha_3": "SVK"
+    },
+    {
+        "country_name": "Slovenia",
+        "fifa_code": "SVN",
+        "ioc_noc_code": "SLO",
+        "iso_alpha_2": "SI",
+        "iso_alpha_3": "SVN"
+    },
+    {
+        "country_name": "Solomon Islands",
+        "fifa_code": "SOL",
+        "ioc_noc_code": "SOL",
+        "iso_alpha_2": "SB",
+        "iso_alpha_3": "SLB"
+    },
+    {
+        "country_name": "Somalia",
+        "fifa_code": "SOM",
+        "ioc_noc_code": "SOM",
+        "iso_alpha_2": "SO",
+        "iso_alpha_3": "SOM"
+    },
+    {
+        "country_name": "South Africa",
+        "fifa_code": "RSA",
+        "ioc_noc_code": "RSA",
+        "iso_alpha_2": "ZA",
+        "iso_alpha_3": "ZAF"
+    },
+    {
+        "country_name": "South Georgia and the South Sandwich Islands",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "GS",
+        "iso_alpha_3": "SGS"
+    },
+    {
+        "country_name": "South Sudan",
+        "fifa_code": "SSD",
+        "ioc_noc_code": "SSD",
+        "iso_alpha_2": "SS",
+        "iso_alpha_3": "SSD"
+    },
+    {
+        "country_name": "Spain",
+        "fifa_code": "ESP",
+        "ioc_noc_code": "ESP",
+        "iso_alpha_2": "ES",
+        "iso_alpha_3": "ESP"
+    },
+    {
+        "country_name": "Sri Lanka",
+        "fifa_code": "SRI",
+        "ioc_noc_code": "SRI",
+        "iso_alpha_2": "LK",
+        "iso_alpha_3": "LKA"
+    },
+    {
+        "country_name": "Sudan",
+        "fifa_code": "SDN",
+        "ioc_noc_code": "SUD",
+        "iso_alpha_2": "SD",
+        "iso_alpha_3": "SDN"
+    },
+    {
+        "country_name": "Suriname",
+        "fifa_code": "SUR",
+        "ioc_noc_code": "SUR",
+        "iso_alpha_2": "SR",
+        "iso_alpha_3": "SUR"
+    },
+    {
+        "country_name": "Svalbard and Jan Mayen",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "SJ",
+        "iso_alpha_3": "SJM"
+    },
+    {
+        "country_name": "Sweden",
+        "fifa_code": "SWE",
+        "ioc_noc_code": "SWE",
+        "iso_alpha_2": "SE",
+        "iso_alpha_3": "SWE"
+    },
+    {
+        "country_name": "Switzerland",
+        "fifa_code": "SUI",
+        "ioc_noc_code": "SUI",
+        "iso_alpha_2": "CH",
+        "iso_alpha_3": "CHE"
+    },
+    {
+        "country_name": "Syrian Arab Republic",
+        "fifa_code": "SYR",
+        "ioc_noc_code": "SYR",
+        "iso_alpha_2": "SY",
+        "iso_alpha_3": "SYR"
+    },
+    {
+        "country_name": "Taiwan, Province of China",
+        "fifa_code": "TPE",
+        "ioc_noc_code": "TPE",
+        "iso_alpha_2": "TW",
+        "iso_alpha_3": "TWN"
+    },
+    {
+        "country_name": "Tajikistan",
+        "fifa_code": "TJK",
+        "ioc_noc_code": "TJK",
+        "iso_alpha_2": "TJ",
+        "iso_alpha_3": "TJK"
+    },
+    {
+        "country_name": "Tanzania, United Republic of",
+        "fifa_code": "TAN",
+        "ioc_noc_code": "TAN",
+        "iso_alpha_2": "TZ",
+        "iso_alpha_3": "TZA"
+    },
+    {
+        "country_name": "Thailand",
+        "fifa_code": "THA",
+        "ioc_noc_code": "THA",
+        "iso_alpha_2": "TH",
+        "iso_alpha_3": "THA"
+    },
+    {
+        "country_name": "Timor-Leste",
+        "fifa_code": "TLS",
+        "ioc_noc_code": "TLS",
+        "iso_alpha_2": "TL",
+        "iso_alpha_3": "TLS"
+    },
+    {
+        "country_name": "Togo",
+        "fifa_code": "TOG",
+        "ioc_noc_code": "TOG",
+        "iso_alpha_2": "TG",
+        "iso_alpha_3": "TGO"
+    },
+    {
+        "country_name": "Tokelau",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "TK",
+        "iso_alpha_3": "TKL"
+    },
+    {
+        "country_name": "Tonga",
+        "fifa_code": "TGA",
+        "ioc_noc_code": "TGA",
+        "iso_alpha_2": "TO",
+        "iso_alpha_3": "TON"
+    },
+    {
+        "country_name": "Trinidad and Tobago",
+        "fifa_code": "TRI",
+        "ioc_noc_code": "TTO",
+        "iso_alpha_2": "TT",
+        "iso_alpha_3": "TTO"
+    },
+    {
+        "country_name": "Tunisia",
+        "fifa_code": "TUN",
+        "ioc_noc_code": "TUN",
+        "iso_alpha_2": "TN",
+        "iso_alpha_3": "TUN"
+    },
+    {
+        "country_name": "Türkiye",
+        "fifa_code": "TUR",
+        "ioc_noc_code": "TUR",
+        "iso_alpha_2": "TR",
+        "iso_alpha_3": "TUR"
+    },
+    {
+        "country_name": "Turkmenistan",
+        "fifa_code": "TKM",
+        "ioc_noc_code": "TKM",
+        "iso_alpha_2": "TM",
+        "iso_alpha_3": "TKM"
+    },
+    {
+        "country_name": "Turks and Caicos Islands",
+        "fifa_code": "TCA",
+        "ioc_noc_code": null,
+        "iso_alpha_2": "TC",
+        "iso_alpha_3": "TCA"
+    },
+    {
+        "country_name": "Tuvalu",
+        "fifa_code": null,
+        "ioc_noc_code": "TUV",
+        "iso_alpha_2": "TV",
+        "iso_alpha_3": "TUV"
+    },
+    {
+        "country_name": "Uganda",
+        "fifa_code": "UGA",
+        "ioc_noc_code": "UGA",
+        "iso_alpha_2": "UG",
+        "iso_alpha_3": "UGA"
+    },
+    {
+        "country_name": "Ukraine",
+        "fifa_code": "UKR",
+        "ioc_noc_code": "UKR",
+        "iso_alpha_2": "UA",
+        "iso_alpha_3": "UKR"
+    },
+    {
+        "country_name": "United Arab Emirates",
+        "fifa_code": "UAE",
+        "ioc_noc_code": "UAE",
+        "iso_alpha_2": "AE",
+        "iso_alpha_3": "ARE"
+    },
+    {
+        "country_name": "United Kingdom",
+        "fifa_code": null,
+        "ioc_noc_code": "GBR",
+        "iso_alpha_2": "GB",
+        "iso_alpha_3": "GBR"
+    },
+    {
+        "country_name": "United States",
+        "fifa_code": "USA",
+        "ioc_noc_code": "USA",
+        "iso_alpha_2": "US",
+        "iso_alpha_3": "USA"
+    },
+    {
+        "country_name": "United States Minor Outlying Islands",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "UM",
+        "iso_alpha_3": "UMI"
+    },
+    {
+        "country_name": "Virgin Islands, U.S.",
+        "fifa_code": "VIR",
+        "ioc_noc_code": "ISV",
+        "iso_alpha_2": "VI",
+        "iso_alpha_3": "VIR"
+    },
+    {
+        "country_name": "Uruguay",
+        "fifa_code": "URU",
+        "ioc_noc_code": "URU",
+        "iso_alpha_2": "UY",
+        "iso_alpha_3": "URY"
+    },
+    {
+        "country_name": "Uzbekistan",
+        "fifa_code": "UZB",
+        "ioc_noc_code": "UZB",
+        "iso_alpha_2": "UZ",
+        "iso_alpha_3": "UZB"
+    },
+    {
+        "country_name": "Vanuatu",
+        "fifa_code": "VAN",
+        "ioc_noc_code": "VAN",
+        "iso_alpha_2": "VU",
+        "iso_alpha_3": "VUT"
+    },
+    {
+        "country_name": "Holy See (Vatican City State)",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "VA",
+        "iso_alpha_3": "VAT"
+    },
+    {
+        "country_name": "Venezuela, Bolivarian Republic of",
+        "fifa_code": "VEN",
+        "ioc_noc_code": "VEN",
+        "iso_alpha_2": "VE",
+        "iso_alpha_3": "VEN"
+    },
+    {
+        "country_name": "Viet Nam",
+        "fifa_code": "VIE",
+        "ioc_noc_code": "VIE",
+        "iso_alpha_2": "VN",
+        "iso_alpha_3": "VNM"
+    },
+    {
+        "country_name": "Viet Nam",
+        "fifa_code": "WAL",
+        "ioc_noc_code": null,
+        "iso_alpha_2": "VN",
+        "iso_alpha_3": null
+    },
+    {
+        "country_name": "Wallis and Futuna",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "WF",
+        "iso_alpha_3": "WLF"
+    },
+    {
+        "country_name": "Western Sahara",
+        "fifa_code": null,
+        "ioc_noc_code": null,
+        "iso_alpha_2": "EH",
+        "iso_alpha_3": "ESH"
+    },
+    {
+        "country_name": "Yemen",
+        "fifa_code": "YEM",
+        "ioc_noc_code": "YEM",
+        "iso_alpha_2": "YE",
+        "iso_alpha_3": "YEM"
+    },
+    {
+        "country_name": "Zambia",
+        "fifa_code": "ZAM",
+        "ioc_noc_code": "ZAM",
+        "iso_alpha_2": "ZM",
+        "iso_alpha_3": "ZMB"
+    },
+    {
+        "country_name": "Zimbabwe",
+        "fifa_code": "ZIM",
+        "ioc_noc_code": "ZIM",
+        "iso_alpha_2": "ZW",
+        "iso_alpha_3": "ZWE"
+    }
+]
