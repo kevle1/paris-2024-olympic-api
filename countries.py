@@ -1,27 +1,26 @@
+import json
 from bs4 import BeautifulSoup
 import requests
 import pycountry
 
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
 
-def get_noc_codes() -> dict[str, str]:
-    response = requests.get("https://en.wikipedia.org/wiki/List_of_IOC_country_codes")
-    soup = BeautifulSoup(response.content, "html.parser")
-    noc_table = soup.find("table", {"class": "wikitable"})
 
-    ioc_noc_codes = {}
-    for noc in noc_table.find_all("tr")[1:]:
-        cols = noc.find_all("td")
-        if len(cols) >= 2:
-            noc_code = cols[0].text.strip()
-            country = cols[1].text.strip()
-            ioc_noc_codes[country] = noc_code
-
-    return ioc_noc_codes
+def get_noc_codes() -> dict[str, dict[str, str]]:
+    response = requests.get(
+        "https://olympics.com/OG2024/data/MIS_NOCS~lang=ENG~comp=OG2024.json",
+        headers={"User-Agent": USER_AGENT},
+    )
+    nocs = {}
+    for noc in response.json()["nocs"]:
+        nocs[noc["code"]] = noc
+    return nocs
 
 
 def get_country_codes() -> tuple[list[dict[str, str]], dict[str, dict[str, str]]]:
     response = requests.get(
-        "https://en.wikipedia.org/wiki/Comparison_of_alphabetic_country_codes"
+        "https://en.wikipedia.org/wiki/Comparison_of_alphabetic_country_codes",
+        headers={"User-Agent": USER_AGENT},
     )
     soup = BeautifulSoup(response.content, "html.parser")
     noc_table = soup.find("table", {"class": "wikitable"})
@@ -38,7 +37,6 @@ def get_country_codes() -> tuple[list[dict[str, str]], dict[str, dict[str, str]]
             return cell.strip()
 
     codes = []
-    noc_to_country = {}
     for noc in noc_table.find_all("tr")[1:]:
         columns = noc.find_all("td")
 
@@ -62,13 +60,18 @@ def get_country_codes() -> tuple[list[dict[str, str]], dict[str, dict[str, str]]
             "iso_alpha_2": country.alpha_2 if country else None,
         }
         codes.append(data)
-        noc_to_country[ioc_noc_code] = data
 
-    return codes, noc_to_country
+    return codes
+
+
+def load_country_codes():
+    with open("countries.json") as f:
+        return json.load(f)
 
 
 def inject_iso_codes(results: list[dict[str, any]]):
-    _, noc_to_country = get_country_codes()
+    codes = load_country_codes()
+    noc_to_country = {code["ioc_noc_code"]: code for code in codes}
 
     for result in results:
         country = result["country"]
