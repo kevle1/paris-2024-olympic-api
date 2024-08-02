@@ -847,11 +847,11 @@
         "iso_alpha_3": "KOR"
     },
     {
-        "country_name": "Korea, Republic of",
+        "country_name": "Kosovo",
         "fifa_code": "KOS",
         "ioc_noc_code": "KOS",
-        "iso_alpha_2": "KR",
-        "iso_alpha_3": null
+        "iso_alpha_2": "XK",
+        "iso_alpha_3": "UNK"
     },
     {
         "country_name": "Kuwait",
