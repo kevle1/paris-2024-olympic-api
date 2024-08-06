@@ -103,49 +103,6 @@ def _get_olympic_data_results():
     return datetime.now().isoformat(), ranked_results, OLYMPICS_DATA_URL
 
 
-def _parse_wikipedia_soup_medal_tally(
-    soup: BeautifulSoup,
-) -> tuple[str, list[dict[str, any]], str]:
-    ioc_noc_codes = get_noc_codes()
-    table = soup.find("caption", text="2024 Summer Olympics medal table").find_parent(
-        "table"
-    )
-    results = []
-    noc_rows = table.find("tbody").find_all("tr")
-
-    for noc in noc_rows[1:-1]:
-        cells = noc.find_all(["td", "th"])
-        country_name = noc.find("a").text
-
-        offset = 0
-        # some countries share a merged cell for the rank and country name
-        # causing the medal count to be at a different index
-        if len(cells) == 5:
-            offset = 1
-
-        gold = int(cells[2 - offset].text)
-        silver = int(cells[3 - offset].text)
-        bronze = int(cells[4 - offset].text)
-
-        country_data = {
-            "country": {
-                "code": ioc_noc_codes.get(country_name),
-                "name": country_name,
-            },
-            "medals": {
-                "bronze": bronze,
-                "gold": gold,
-                "silver": silver,
-                "total": bronze + gold + silver,
-            },
-        }
-
-        results.append(country_data)
-
-    ranked_results = _calculate_rankings(results)
-    return datetime.now().isoformat(), ranked_results, "wikipedia.org"
-
-
 def _parse_olympic_soup_medal_tally(
     soup: BeautifulSoup,
 ) -> tuple[str, list[dict[str, any]], str]:
@@ -178,10 +135,9 @@ def _parse_olympic_soup_medal_tally(
 
         results.append(result)
 
-    last_updated = soup.find("time")["datetime"]
     ranked_results = _calculate_rankings(results)
 
-    return last_updated, ranked_results, "olympics.com"
+    return datetime.now().isoformat(), ranked_results, "olympics.com"
 
 
 def _calculate_rankings(results: list[dict[str, any]]) -> list[dict[str, any]]:

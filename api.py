@@ -1,12 +1,9 @@
 import os
 from flask import Flask, jsonify, make_response, request
-from flask_cors import CORS
 
-from countries import get_country_codes
 from olympic import get_olympic_medal_tally
 
 app = Flask(__name__)
-CORS(app)
 
 
 @app.route("/", methods=["GET"])
@@ -24,6 +21,7 @@ def get_medal_tally():
     results = get_olympic_medal_tally(ioc_noc_code=ioc_noc_code)
     response = make_response(jsonify(results))
     # https://vercel.com/docs/edge-network/caching
+    response.headers["Access-Control-Allow-Origin"] = "*"
     response.headers["Cache-Control"] = "public, s-maxage=1800"
     return response
 
