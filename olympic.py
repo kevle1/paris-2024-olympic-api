@@ -135,10 +135,9 @@ def _parse_olympic_soup_medal_tally(
 
         results.append(result)
 
-    last_updated = soup.find("time")["datetime"]
     ranked_results = _calculate_rankings(results)
 
-    return last_updated, ranked_results, "olympics.com"
+    return datetime.now().isoformat(), ranked_results, "olympics.com"
 
 
 def _calculate_rankings(results: list[dict[str, any]]) -> list[dict[str, any]]:
