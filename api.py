@@ -30,13 +30,15 @@ def get_medal_tally():
 
     ratelimit_gate = ratelimit.limit(ip)
     if not ratelimit_gate.allowed:
-        return make_response(jsonify({"error": "Rate limit exceeded"}), 429)
+        response = make_response(jsonify({"error": "Rate limit exceeded"}))
+        response.headers["Retry-After"] = 10
+        return make_response(jsonify(), 429)
 
     cache_key = f"medals_cache:{ip}:{ioc_noc_code}"
     cached_response = redis.get(cache_key)
 
     if cached_response:
-        return make_response(cached_response, 200)
+        return make_response(jsonify(cached_response), 200)
 
     results = get_olympic_medal_tally(ioc_noc_code=ioc_noc_code)
     response = make_response(jsonify(results))
