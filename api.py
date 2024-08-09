@@ -26,17 +26,25 @@ def home():
 @app.route("/medals", methods=["GET"])
 def get_medal_tally():
     ip = request.headers.get("X-Real-Ip")
-    ratelimit_gate = ratelimit.limit(ip)
+    ioc_noc_code = request.args.get("country")
 
+    ratelimit_gate = ratelimit.limit(ip)
     if not ratelimit_gate.allowed:
         return make_response(jsonify({"error": "Rate limit exceeded"}), 429)
 
-    ioc_noc_code = request.args.get("country")
+    cache_key = f"medals_cache:{ip}:{ioc_noc_code}"
+    cached_response = redis.get(cache_key)
+
+    if cached_response:
+        return make_response(cached_response, 200)
+
     results = get_olympic_medal_tally(ioc_noc_code=ioc_noc_code)
     response = make_response(jsonify(results))
-    # https://vercel.com/docs/edge-network/caching
+
+    redis.setex(cache_key, 1800, response.get_data(as_text=True))
+
     response.headers["Access-Control-Allow-Origin"] = "*"
-    response.headers["Cache-Control"] = "public, s-maxage=1800"
+    # response.headers["Cache-Control"] = "public, max-age=30"
 
     return response
 
