@@ -2,7 +2,7 @@
 
 ![paris-2024](https://i.imgur.com/mXgb71e.png)
 
-An **unofficial** API for the Paris 2024 summer olympics medal tally.
+An **unofficial** API for the Paris 2024 summer olympics medal tally. Let's go 🇦🇺!
 
 Hosted at https://api.olympics.kevle.xyz/
 

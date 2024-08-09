@@ -1,7 +1,7 @@
 import os
 from flask import Flask, jsonify, make_response, request
 
-from olympic import get_olympic_medal_tally
+from api.olympic import get_olympic_medal_tally
 
 app = Flask(__name__)
 
