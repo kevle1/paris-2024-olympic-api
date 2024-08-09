@@ -1,3 +1,4 @@
+import json
 import os
 from flask import Flask, jsonify, make_response, request
 from upstash_ratelimit import FixedWindow, Ratelimit
@@ -38,7 +39,7 @@ def get_medal_tally():
     cached_response = redis.get(cache_key)
 
     if cached_response:
-        return make_response(jsonify(cached_response), 200)
+        return make_response(jsonify(json.loads(cached_response)), 200)
 
     results = get_olympic_medal_tally(ioc_noc_code=ioc_noc_code)
     response = make_response(jsonify(results))
