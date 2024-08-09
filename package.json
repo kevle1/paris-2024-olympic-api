@@ -1,8 +1,0 @@
-{
-    "private": true,
-    "dependencies": {
-        "@upstash/ratelimit": "^0.4.3",
-        "@vercel/edge": "^0.3.4",
-        "@vercel/kv": "^0.2.2"
-    }
-}
