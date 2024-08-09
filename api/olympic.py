@@ -3,7 +3,7 @@ import requests
 
 from datetime import datetime
 
-from countries import get_noc_codes, inject_iso_codes
+from api.countries import get_noc_codes, inject_iso_codes
 
 OLYMPICS_DATA_URL = (
     "https://olympics.com/OG2024/data/CIS_MedalNOCs~lang=ENG~comp=OG2024.json"
