@@ -1,11 +1,9 @@
 import os
-import logging
 from flask import Flask, jsonify, make_response, request
 
 from api.olympic import get_olympic_medal_tally
 
 app = Flask(__name__)
-logger = logging.getLogger(__name__)
 
 
 @app.route("/", methods=["GET"])
@@ -20,7 +18,7 @@ def home():
 @app.route("/medals", methods=["GET"])
 def get_medal_tally():
     ip = request.headers.get('X-Real-Ip')
-    logger.info(ip)
+    print(ip)
 
     ioc_noc_code = request.args.get("country")
     results = get_olympic_medal_tally(ioc_noc_code=ioc_noc_code)
