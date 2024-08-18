@@ -2,11 +2,11 @@
 
 ![paris-2024](https://i.imgur.com/mXgb71e.png)
 
-An **unofficial** API for the Paris 2024 summer olympics medal tally. Let's go 🇦🇺!
+An **unofficial** API for the Paris 2024 summer olympics medal tally.
 
-Hosted at https://api.olympics.kevle.xyz/
+~~Hosted at https://api.olympics.kevle.xyz/~~ Over 450k requests over the course of the Olympics! Final result can be found [here](final.json).
 
-Or deploy yourself:
+Deploy yourself:
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fkevle1%2Fparis-2024-olympic-api)
 
