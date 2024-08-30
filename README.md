@@ -12,7 +12,7 @@ Deploy yourself:
 
 ## Usage
 
-### GET [/medals](https://api.olympics.olympics.kevle.xyz/medals)
+### GET [/medals](https://api.olympics.kevle.xyz/medals)
 
 - Using the [**Olympic** data endpoint](https://olympics.com/OG2024/data/CIS_MedalNOCs~lang=ENG~comp=OG2024.json)
 - 450k+ requests made over the course of the Olympics!
