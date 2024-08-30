@@ -1,10 +1,10 @@
-# Paris 2024 Olympic Medals API
+# Paris 2024 Olympic and Paralympic Medals API
 
-![paris-2024](https://i.imgur.com/mXgb71e.png)
+![paris-2024](/banner.png)
 
-An **unofficial** API for the Paris 2024 summer olympics medal tally.
+An **unofficial** API for the Paris 2024 summer Olympics and Paralympics medal tally.
 
-~~Hosted at https://api.olympics.kevle.xyz/~~ Over 450k requests over the course of the Olympics! Final result can be found [here](final.json).
+Hosted at https://api.olympics.kevle.xyz/
 
 Deploy yourself:
 
@@ -12,16 +12,26 @@ Deploy yourself:
 
 ## Usage
 
-### GET [/medals](https://api.olympics.kevle.xyz/medals)
+### GET [/medals](https://api.olympics.olympics.kevle.xyz/medals)
 
-- Returns medals for countries using the [**Olympic** data endpoint](https://olympics.com/OG2024/data/CIS_MedalNOCs~lang=ENG~comp=OG2024.json).
+- Using the [**Olympic** data endpoint](https://olympics.com/OG2024/data/CIS_MedalNOCs~lang=ENG~comp=OG2024.json)
+- 450k+ requests made over the course of the Olympics!
+- Final result can be found [here](results/olympics.json).
 
-#### Query parameters:
+### GET [/paralympics/medals](https://api.olympics.kevle.xyz/paralympics/medals)
 
-- `country` str (Optional)
+- Using the [**Paralympic** data endpoint](https://olympics.com/PG2024/data/CIS_MedalNOCs~lang=ENG~comp=PG2024.json)
+
+### Query Parameters
+
+For both endpoints
+
+- `country` string (Optional)
   - Query medals for a specific country using an [IOC NOC country code](https://en.wikipedia.org/wiki/List_of_IOC_country_codes#Current_NOCs)
   - Returns an empty list if NOC does not exist or have any medals yet
-  - Example [/medals?country=aus](https://api.olympics.kevle.xyz/medals?country=aus)
+  - Example:
+    - [/medals?country=aus](https://api.olympics.kevle.xyz/medals?country=aus)
+    - [/paralympics/medals?country=aus](https://api.olympics.kevle.xyz/paralympics/medals?country=aus)
 
 #### Example Response
 
@@ -97,4 +107,4 @@ Deploy yourself:
 
 ## Copyright
 
-All trademarks, data, and other relevant properties are the copyright and property of the International Olympic Committee (IOC).
+All trademarks, data, and other relevant properties are the copyright and property of the International Olympic Committee (IOC)/ International Paralympic Committee (IPC).

@@ -1,7 +1,7 @@
 import os
 from flask import Flask, jsonify, make_response, request
 
-from api.olympic import get_olympic_medal_tally
+from api.olympic import get_olympic_medal_tally, get_paralympic_medal_tally
 
 app = Flask(__name__)
 
@@ -9,20 +9,32 @@ app = Flask(__name__)
 @app.route("/", methods=["GET"])
 def home():
     return """
-        <h1>Paris 2024 Olympic Medal Tally Unofficial API</h1>
+        <h1>Paris 2024 Olympics & Paralympics Medal Tally Unofficial API</h1>
         <p>All trademarks, data, and other relevant properties are the copyright and
         property of the International Olympic Committee (IOC).</p>
         """
 
 
 @app.route("/medals", methods=["GET"])
-def get_medal_tally():
+def get_olympic_medal_tally_api():
     ioc_noc_code = request.args.get("country")
     results = get_olympic_medal_tally(ioc_noc_code=ioc_noc_code)
 
     response = make_response(jsonify(results))
     response.headers["Access-Control-Allow-Origin"] = "*"
     # https://vercel.com/docs/edge-network/caching
+    response.headers["Cache-Control"] = "public, s-maxage=1800"
+
+    return response
+
+
+@app.route("/paralympics/medals", methods=["GET"])
+def get_paralympic_medal_tally_api():
+    ioc_noc_code = request.args.get("country")
+    results = get_paralympic_medal_tally(ioc_noc_code=ioc_noc_code)
+
+    response = make_response(jsonify(results))
+    response.headers["Access-Control-Allow-Origin"] = "*"
     response.headers["Cache-Control"] = "public, s-maxage=1800"
 
     return response

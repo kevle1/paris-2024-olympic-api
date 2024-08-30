@@ -8,6 +8,9 @@ from api.countries import get_noc_codes, inject_iso_codes
 OLYMPICS_DATA_URL = (
     "https://olympics.com/OG2024/data/CIS_MedalNOCs~lang=ENG~comp=OG2024.json"
 )
+PARALYMPICS_DATA_URL = (
+    "https://olympics.com/PG2024/data/CIS_MedalNOCs~lang=ENG~comp=PG2024.json"
+)
 OLYMPICS_SITE_URL = "https://olympics.com/en/paris-2024/medals"
 WIKIPEDIA_URL = "https://en.wikipedia.org/wiki/2024_Summer_Olympics_medal_table"
 
@@ -26,6 +29,21 @@ def get_olympic_medal_tally(
         soup = _get_soup(OLYMPICS_SITE_URL)
         last_updated, results, source = _parse_olympic_soup_medal_tally(soup)
 
+    return _build_response(last_updated, results, source, ioc_noc_code=ioc_noc_code)
+
+
+def get_paralympic_medal_tally(
+    ioc_noc_code: str = None,
+) -> dict[str, any]:
+    return _build_response(*_get_paralympic_data_results(), ioc_noc_code=ioc_noc_code)
+
+
+def _build_response(
+    last_updated: str,
+    results: list[dict[str, any]],
+    source: str,
+    ioc_noc_code: str = None,
+) -> dict[str, any]:
     if ioc_noc_code:
         result = _get_result_for_noc(results, ioc_noc_code)
         if result:
@@ -60,10 +78,24 @@ def _get_soup(url: str) -> BeautifulSoup:
 
 def _get_olympic_data_results():
     response = requests.get(OLYMPICS_DATA_URL, headers={"User-Agent": USER_AGENT})
-    noc_codes = get_noc_codes()
+    ranked_results = _parse_olympic_api_results(response.json())
 
+    return datetime.now().isoformat(), ranked_results, OLYMPICS_DATA_URL
+
+
+def _get_paralympic_data_results():
+    response = requests.get(PARALYMPICS_DATA_URL, headers={"User-Agent": USER_AGENT})
+    ranked_results = _parse_olympic_api_results(response.json())
+
+    return datetime.now().isoformat(), ranked_results, PARALYMPICS_DATA_URL
+
+
+def _parse_olympic_api_results(
+    data: dict[str, any]
+) -> tuple[str, list[dict[str, any]], str]:
+    noc_codes = get_noc_codes()
     nocs = {}
-    for item in response.json()["medalNOC"]:
+    for item in data["medalNOC"]:
         if item["gender"] == "TOT" and item["sport"] == "GLO":
             noc = item["org"]
             if noc not in nocs:
@@ -98,9 +130,7 @@ def _get_olympic_data_results():
         }
 
         results.append(country_data)
-    ranked_results = sorted(results, key=lambda x: x["rank"])
-
-    return datetime.now().isoformat(), ranked_results, OLYMPICS_DATA_URL
+    return sorted(results, key=lambda x: x["rank"])
 
 
 def _parse_olympic_soup_medal_tally(
