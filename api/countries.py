@@ -17,6 +17,14 @@ def get_noc_codes() -> dict[str, dict[str, str]]:
     return nocs
 
 
+def load_country_codes():
+    try:
+        with open("countries.json") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return get_country_codes()
+
+
 def get_country_codes() -> tuple[list[dict[str, str]], dict[str, dict[str, str]]]:
     response = requests.get(
         "https://en.wikipedia.org/wiki/Comparison_of_alphabetic_country_codes",
@@ -62,11 +70,6 @@ def get_country_codes() -> tuple[list[dict[str, str]], dict[str, dict[str, str]]
         codes.append(data)
 
     return codes
-
-
-def load_country_codes():
-    with open("countries.json") as f:
-        return json.load(f)
 
 
 def inject_iso_codes(results: list[dict[str, any]]):
