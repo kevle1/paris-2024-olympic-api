@@ -1,10 +1,10 @@
-# Paris 2024 Olympic and Paralympic Medals API
+# Paris 2024 Olympics and Paralympics Medal API
 
 ![paris-2024](/banner.png)
 
 An **unofficial** API for the Paris 2024 summer Olympics and Paralympics medal tally.
 
-Hosted at https://api.olympics.kevle.xyz/
+~~Hosted at https://api.olympics.kevle.xyz/~~ Over 500k requests made to the API
 
 Deploy yourself:
 
@@ -15,7 +15,6 @@ Deploy yourself:
 ### GET [/medals](https://api.olympics.kevle.xyz/medals)
 
 - Using the [**Olympic** data endpoint](https://olympics.com/OG2024/data/CIS_MedalNOCs~lang=ENG~comp=OG2024.json)
-- 450k+ requests made over the course of the Olympics!
 - Final result can be found [here](results/olympics.json).
 
 ### GET [/paralympics/medals](https://api.olympics.kevle.xyz/paralympics/medals)
